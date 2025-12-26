@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:500,600,700,800,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Baloo 2', 'Poppins', sans-serif;
-    color: #2f1c44;
+    font-family: 'Poppins', sans-serif;
+    color: white;
 }
 
 html,
@@ -19,22 +18,6 @@ body {
 html {
     scroll-behavior: smooth;
     /* To scrolling animation */
-}
-
-:root {
-    --candy-yellow: #ffd973;
-    --candy-pink: #ff9ad5;
-    --candy-blue: #7ad6ff;
-    --deep-blue: #0f3b5f;
-    --marshmallow: #fff7ef;
-    --bubble-shadow: 0 12px 35px rgba(15, 59, 95, 0.25);
-}
-
-body {
-    background: radial-gradient(circle at 20% 20%, rgba(255, 154, 213, 0.2), transparent 25%),
-        radial-gradient(circle at 80% 0%, rgba(255, 217, 115, 0.2), transparent 20%),
-        linear-gradient(180deg, #fdf5ff 0%, #dff4ff 60%, #c8e7ff 100%);
-    color: #2f1c44;
 }
 
 #header {
@@ -50,20 +33,14 @@ body {
     align-items: center;
     z-index: 99999;
     /* Header shld be above everything */
-    background: rgba(255, 247, 239, 0.7);
-    border-bottom: 2px solid rgba(255, 154, 213, 0.35);
-    box-shadow: var(--bubble-shadow);
-    backdrop-filter: blur(10px);
 }
 
 #header .logo {
-    color: #e362ad;
+    color: #002431;
     font-weight: 800;
     font-size: 2.5em;
     text-decoration: none;
     /* To prevent Underline */
-    letter-spacing: 2px;
-    text-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
 }
 
 #header ul {
@@ -83,18 +60,14 @@ body {
     text-decoration: none;
     /* To prevent Underline */
     padding: 6px 15px;
-    color: #0f3b5f;
+    color: #003549;
     border-radius: 20px;
-    background: rgba(122, 214, 255, 0.15);
-    border: 1px solid rgba(122, 214, 255, 0.35);
-    box-shadow: 0 8px 20px rgba(0, 59, 103, 0.12);
 }
 
 #header ul li a:hover,
 #header ul li a.active {
-    background: linear-gradient(135deg, #ff9ad5, #ffd973);
-    color: #0f1a2c;
-    border-color: transparent;
+    background: #003549;
+    color: white;
 }
 
 /* The Section Body... Set it to max size of screen */
@@ -105,7 +78,6 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(180deg, #fdf5ff 0%, #fef1ff 35%, #c7eaff 100%);
 }
 
 /* To blend section color with water color */
@@ -115,8 +87,8 @@ section::before {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 160px;
-    background: linear-gradient(to top, rgba(15, 59, 95, 0.4), transparent);
+    height: 100px;
+    background: linear-gradient(to top, #085a7a, transparent);
     z-index: 10;
 }
 
@@ -129,7 +101,6 @@ section img {
     height: 100%;
     object-fit: cover;
     pointer-events: none;
-    filter: saturate(1.25) contrast(1.05) drop-shadow(0 12px 20px rgba(15, 59, 95, 0.15));
 }
 
 /* Properites for th text on top section  */
@@ -137,19 +108,18 @@ section #text span {
     font-size: 0.2em;
     letter-spacing: 2px;
     font-weight: 400;
-    color: #0f1a2c;
+    color: white;
 }
 
 section #text {
     position: absolute;
-    color: #e362ad;
+    color: #004660;
     font-size: 10vw;
     text-align: center;
     line-height: 0.55em;
     font-family: 'Rancho', cursive;
     transform: translateY(-50%);
     top: 50%;
-    text-shadow: 0 15px 25px rgba(15, 59, 95, 0.15);
 }
 
 
@@ -158,22 +128,19 @@ section #text {
     text-decoration: none;
     /* To prevent Underline */
     padding: 8px 25px;
-    background: linear-gradient(135deg, #ff9ad5, #ffd973);
-    color: #0f1a2c;
+    background: white;
+    color: #003549;
     font-size: 1.3em;
     font-weight: bold;
     letter-spacing: 2px;
     border-radius: 40px;
     transform: translateY(100px);
     /* To move it 100px below from center */
-    box-shadow: 0 12px 25px rgba(15, 59, 95, 0.2);
-    border: 2px solid rgba(255, 247, 239, 0.7);
 }
 
 #explore:hover {
-    background: linear-gradient(135deg, #ffd973, #ff9ad5);
-    color: #0f1a2c;
-    transform: translateY(92px) scale(1.02);
+    background: #003549;
+    color: white;
 }
 
 /* Propeties of Top button */
@@ -181,16 +148,16 @@ section #text {
     position: fixed;
     width: 50px;
     height: 50px;
-    background: linear-gradient(180deg, #ff9ad5, #7ad6ff);
+    background: #4faa2e;
     bottom: 10%;
     right: 5%;
     text-decoration: none;
     text-align: center;
     line-height: 50px;
-    color: #0f1a2c;
+    color: white;
     font-size: 25px;
     border-radius: 50%;
-    box-shadow: var(--bubble-shadow);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
     z-index: 100;
 }
 
@@ -198,13 +165,13 @@ section #text {
 
 /* Glass Effect */
 .glass {
-    background: linear-gradient(135deg, rgba(255, 247, 239, 0.65), rgba(255, 154, 213, 0.2));
-    border-top: 1px solid rgba(255, 217, 115, 0.8);
-    border-left: 1px solid rgba(122, 214, 255, 0.5);
-    border-radius: 22px;
-    box-shadow: 12px 20px 40px rgba(15, 59, 95, 0.25);
-    backdrop-filter: blur(6px);
-    padding: 1.4em;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-Left: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(4px);
+    padding: 1em;
     margin-bottom: 2%;
 }
 
@@ -212,7 +179,7 @@ section #text {
 .sec {
     position: relative;
     padding: 10%;
-    background: linear-gradient(180deg, #c8e7ff 0%, #a9dbff 55%, #89c7f6 100%);
+    background: #085a7a;
     padding-bottom: 15%;
     z-index: 50;
     overflow: hidden;
@@ -221,7 +188,6 @@ section #text {
 /* Properties for text content */
 .sec h2 {
     font-size: 3.5em;
-    color: #0f1a2c;
 }
 
 .sec #name {
@@ -230,25 +196,21 @@ section #text {
     letter-spacing: 2px;
     font-weight: 500;
     margin-bottom: 20px;
-    color: #0f3b5f;
 }
 
 .sec h3 {
     font-size: 1.8em;
     margin: 2%;
-    color: #0f1a2c;
 }
 
 .sec h4 {
     font-size: 1.2em;
     text-decoration: underline;
     font-weight: 600;
-    color: #0f3b5f;
 }
 
 .sec p {
     margin: 10px 20px 40px;
-    color: #1f2a44;
 }
 
 .sec ul {
@@ -264,7 +226,6 @@ section #text {
 .fishes {
     position: absolute;
     opacity: 0.8;
-    filter: saturate(1.25) drop-shadow(0 10px 18px rgba(15, 59, 95, 0.2));
 }
 
 /* Properties for each fish and sea bed*/
@@ -363,7 +324,6 @@ section #text {
     section #text {
         font-size: 20vw;
         /* Adjust text size acc to screen size */
-        text-shadow: 0 10px 18px rgba(15, 59, 95, 0.18);
     }
 
     /* Using contian to make img fit mobile screen size */
