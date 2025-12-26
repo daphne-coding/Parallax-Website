@@ -88,7 +88,7 @@ section::before {
     left: 0;
     width: 100%;
     height: 100px;
-    background: linear-gradient(to top, #2f5f32, transparent);
+    background: linear-gradient(to top, #085a7a, transparent);
     z-index: 10;
 }
 
@@ -179,7 +179,7 @@ section #text {
 .sec {
     position: relative;
     padding: 10%;
-    background: linear-gradient(to bottom, #d8ecff 0%, #d8ecff 10%, #3f7a3d 10%, #2f5f32 90%, #2b472f 100%);
+    background: #085a7a;
     padding-bottom: 15%;
     z-index: 50;
     overflow: hidden;
