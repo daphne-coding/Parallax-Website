@@ -5,6 +5,7 @@ time = document.getElementsByClassName('bubbles')[0];
 var fish2move = 100;
 var fish3move = 900;
 var fish4move = 1200;
+var sunBaseOffset = 80;
 
 if (screen.width < 400) {
 
@@ -16,6 +17,7 @@ if (screen.width < 400) {
     fish2move = 1680;
     fish3move = 3000;
     fish4move = 4300;
+    sunBaseOffset = 60;
 }
 
 
@@ -42,7 +44,7 @@ window.addEventListener('scroll', function () {
     mountains.style.top = value * 0.25 + 'px';
 
     header.style.top = value * 0.7 + 'px';
-    sun.style.top = value * 1 + 'px';
+    sun.style.top = sunBaseOffset + value * 0.7 + 'px';
 
     //To prevent splash to move above sea water
     if (value < 380) {
