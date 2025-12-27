@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="探索互動式萬聖節派對專案，展示響應式設計、動畫與網頁開發技巧，沉浸在詭譎又精彩的節慶氛圍中。">
+        content="Découvrez un site de défilement parallaxe immersif, avec design réactif, animations et une atmosphère nocturne captivante.">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/logo.png">
 
     <!-- Page Title -->
-    <title>視差滾動網站</title>
+    <title>Site de défilement parallaxe</title>
 
     <!-- CSS Files -->
     <link rel="stylesheet" href="style.css">
@@ -19,9 +19,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
     <!-- Open Graph meta tags for image sharing -->
-    <meta property="og:title" content="視差滾動網站">
+    <meta property="og:title" content="Site de défilement parallaxe">
     <meta property="og:description"
-        content="探索互動式萬聖節派對專案，沉浸在詭譎又精彩的節慶氛圍中。">
+        content="Découvrez un site de défilement parallaxe immersif, avec design réactif, animations et une atmosphère nocturne captivante.">
     <meta property="og:image" content="https://drive.google.com/uc?id=1GFbBHTi7w8weRVqLJ7bkofezEEGg4U30">
     <meta property="og:type" content="website" />
     <!-- <meta property="og:url" content="https://parallax-website-by-vineet.netlify.app/"> -->
@@ -30,25 +30,25 @@
 <body>
     <!-- 這裡是頁首 / 導覽列 -->
     <header id="header">
-        <a href="#" class="logo">視差特效</a>
+        <a href="#" class="logo">Effet de parallaxe</a>
         <ul>
-            <li><a href="#" class="active">首頁</a></li>
-            <li><a href="#sec">關於</a></li>
-            <li><a href="#footer">聯絡</a></li>
+            <li><a href="#" class="active">Accueil</a></li>
+            <li><a href="#sec">À propos</a></li>
+            <li><a href="#footer">Contact</a></li>
         </ul>
     </header>
 
     <!-- 這裡是頂部區塊（海面上方） -->
     <section>
         <img src="images/land/sky.png" id="sky" class="wallpaper">
-        <img src="images/land/sun.png" id="sun">
+        <img src="images/land/moon.svg" id="sun" alt="Lune éclatante">
         <img src="images/land/mountains.png" id="mountains" class="wallpaper">
         <img src="images/land/cloud.png" id="cloud">
-        <h2 id="text"><span>「擁抱刺激」</span><br>達芙妮</h2>
+        <h2 id="text"><span>« Embrassez le frisson »</span><br>Daphné</h2>
         <img src="images/land/forest.png" id="forest">
         <img src="images/land/bird1.png" id="bird1">
         <img src="images/land/bird2.png" id="bird2">
-        <a href="#sec" id="explore">開始探索</a>
+        <a href="#sec" id="explore">Commencer l'exploration</a>
         <img src="images/land/rocks.png" id="rocks">
         <img src="images/land/splash.png" id="splash">
         <img src="images/land/water.png" id="water">
@@ -68,44 +68,50 @@
         <img src="images/sea/sea8.png" id="sea8" class="undersea">
 
         <!-- 文字內容 -->
-        <h2>視差滾動特效</h2>
-        <div id="name">作者：Vineet Kumar</div>
+        <h2>Effet de défilement parallaxe</h2>
+        <div id="name">Auteur : Vineet Kumar</div>
 
         <br>
 
         <div class="glass">
-            <h3>什麼是視差滾動？</h3>
+            <h3>Qu'est-ce que le défilement parallaxe ?</h3>
             <p>
-                視差滾動是一種網頁設計技巧，讓背景的移動速度比前景慢，使用戶在瀏覽時產生類似 3D 的景深與沉浸式體驗。
-                這種效果源自視覺錯覺：人眼會覺得較近的物體比較大，較遠的物體則像是移動得更慢。這項幻覺很早就被應用在動畫與
-                其他媒體中，打造真實的層次感。最早可追溯到迪士尼《白雪公主與七矮人》等傳統動畫，以及《超級瑪利歐》這類的電玩。
-                隨著 CSS 與 HTML 的進步，視差效果也逐漸被帶入現代的網頁設計。
+                Le défilement parallaxe est une technique de design web où l'arrière-plan se déplace plus lentement que l'avant-plan,
+                créant une impression de profondeur 3D et une immersion lors de la navigation. Cette astuce s'appuie sur une illusion :
+                l'œil perçoit les objets proches comme plus grands, tandis que ceux au loin semblent se déplacer plus lentement. Elle est
+                utilisée depuis longtemps dans l'animation et d'autres médias pour produire une sensation de relief, notamment dans des
+                classiques comme « Blanche-Neige et les Sept Nains » ou des jeux comme « Super Mario ».
                 <br><br>
-                2007 年，開發者 Glutnix 在部落格上分享了其中一個最早的瀏覽器視差範例，示範如何以 JavaScript 與 CSS2
-                支援當時的 Internet Explorer 6 與其他瀏覽器。不過直到 2011 年 HTML5 與 CSS3 普及後，這項技術才真正受到設計師關注。
-                支持者認為它能以簡單的方式展現網路的流動性，並透過視差背景加強互動、提升整體體驗。然而普渡大學於 2013 年發布的研究
-                也指出：「雖然視差滾動提升了使用者體驗的部分面向，但不一定能改善整體體驗。」
+                Avec les progrès du CSS et du HTML, l'effet s'est naturellement intégré au design web moderne. En 2007, le développeur
+                Glutnix a partagé l'un des premiers exemples de parallaxe dans un navigateur, montrant comment exploiter JavaScript et CSS2
+                pour supporter Internet Explorer 6 et ses contemporains. L'essor de HTML5 et CSS3 en 2011 a réellement attiré l'attention
+                des designers. Beaucoup y voient une façon simple de démontrer la fluidité du web et de renforcer l'interaction, même si une
+                étude de l'université Purdue publiée en 2013 rappelle que, si la parallaxe améliore certains aspects de l'expérience
+                utilisateur, elle ne garantit pas une amélioration globale.
             </p>
         </div>
 
         <br>
 
         <div class="glass">
-            <h3>為什麼要使用視差圖像？</h3>
+            <h3>Pourquoi utiliser des images en parallaxe ?</h3>
             <ul>
-                <p>設計師應該嘗試視差圖像的兩個主要原因：</p>
+                <p>Les designers devraient explorer la parallaxe pour deux raisons principales :</p>
                 <li>
-                    <h4>有助於說故事</h4>
+                    <h4>Idéal pour raconter une histoire</h4>
                     <p>
-                        視差圖像非常適合敘事。優秀的設計都是為了溝通——當我們設計網站時，希望與訪客對話，講述產品、服務或品牌的故事。
-                        視差滾動能讓使用者沉浸在獨特的線上體驗，甚至可以打造單頁式網站，讓訪客不必跳轉頁面就能了解完整故事。
+                        La parallaxe se prête parfaitement à la narration. Un bon design sert à communiquer : lorsque nous concevons un site,
+                        nous voulons dialoguer avec les visiteurs et raconter l'histoire d'un produit, d'un service ou d'une marque. Le défilement
+                        parallaxe crée une expérience en ligne immersive et permet même d'imaginer une page unique où l'on découvre tout le récit
+                        sans changer d'écran.
                     </p>
                 </li>
                 <li>
-                    <h4>有助於提升互動與黏著度</h4>
+                    <h4>Renforce l'interaction et la fidélisation</h4>
                     <p>
-                        視差圖像也能用來提升互動。降低網站跳出率是設計時的重要目標，跳出率代表只瀏覽一頁就按下返回或關閉分頁的比例。
-                        過高的跳出率會影響搜尋排名，因此任何能降低跳出率的作法都值得嘗試。精心打造的視差頁面能帶來動態體驗，讓使用者停留更久。
+                        La parallaxe peut aussi soutenir l'interaction. Réduire le taux de rebond demeure un objectif clé : trop d'utilisateurs qui
+                        quittent après une seule page affectent le référencement. Tout ce qui encourage les visiteurs à rester mérite d'être exploré.
+                        Une page parallaxe bien conçue propose une expérience dynamique qui incite les gens à passer plus de temps sur le site.
                     </p>
                 </li>
             </ul>
@@ -114,24 +120,27 @@
         <br>
 
         <div class="glass">
-            <h3>想在網站加入視差效果？請注意以下幾點：</h3>
+            <h3>Envie d'ajouter un effet parallaxe ? Gardez ces points en tête :</h3>
             <ul>
                 <li aria-level="1">
-                    <h4>適度使用</h4>
+                    <h4>À utiliser avec parcimonie</h4>
                     <p>
-                        將視差效果放在特定元素上，比套用在所有頁面更具威力。可將它運用在標題、頁首或首頁，讓視差成為強化設計的亮點，而不是干擾。
+                        Mieux vaut réserver l'effet à quelques éléments clés qu'à toutes les pages. On peut l'appliquer aux titres, à la bannière ou à la
+                        page d'accueil pour en faire un accent qui valorise le design sans le parasiter.
                     </p>
                 </li>
                 <li aria-level="1">
-                    <h4>壓縮圖片</h4>
+                    <h4>Compresser les images</h4>
                     <p>
-                        視差滾動會使用多種媒體與 CSS 形狀來營造層次，不過過大的圖檔會拖慢載入速度並影響體驗，因此務必壓縮圖片。
+                        La parallaxe sollicite plusieurs médias et formes CSS pour créer des calques. Des fichiers trop lourds ralentissent le chargement et
+                        nuisent à l'expérience : compresser les visuels reste indispensable.
                     </p>
                 </li>
                 <li aria-level="1">
-                    <h4>善用色彩</h4>
+                    <h4>Jouer sur les couleurs</h4>
                     <p>
-                        視差不只關乎前景與背景，也包含色彩。背景可以使用去飽和的色調，前景則搭配鮮活的顏色，以創造更強烈的深度感。
+                        La parallaxe concerne aussi la couleur. Un arrière-plan légèrement désaturé et des couleurs vives au premier plan renforcent la
+                        sensation de profondeur.
                     </p>
                 </li>
             </ul>
@@ -158,7 +167,7 @@
 
     <!-- 頁尾區域 -->
     <div class="footer" id="footer">
-        歡迎追蹤我的平台：
+        Suivez-moi sur :
         <div class="wrapper">
             <div class="social-media">
                 <div class="icon">
@@ -182,10 +191,10 @@
                 <div class="icon">
                     <i class="fa-solid fa-link"></i>
                 </div>
-                <span>作品集</span>
+                <span>Portfolio</span>
             </div>
         </div>
-        <span>由 Vineet Kumar 製作 ❤️<br>SSN 工程學院資工四年級</span>
+        <span>Réalisé par Vineet Kumar ❤️<br>Étudiant en 4e année d'informatique au SSN College of Engineering</span>
     </div>
 
     <!-- 回到頁首的按鈕 -->
