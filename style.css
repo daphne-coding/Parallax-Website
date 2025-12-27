@@ -6,14 +6,14 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    color: #e8f0ff;
+    color: #0f2542;
 }
 
 html,
 body {
     overflow-x: hidden;
     /* To prevent Horizontal scroll */
-    background: radial-gradient(circle at 20% 20%, rgba(47, 72, 125, 0.18), transparent 30%), #040814;
+    background: radial-gradient(circle at 20% 20%, rgba(123, 186, 255, 0.35), transparent 32%), #dff1ff;
 }
 
 html {
@@ -67,8 +67,8 @@ html {
 
 #header ul li a:hover,
 #header ul li a.active {
-    background: #123559;
-    color: #f4fbff;
+    background: #0a4c8a;
+    color: #f8fbff;
 }
 
 /* The Section Body... Set it to max size of screen */
@@ -89,7 +89,7 @@ section::before {
     left: 0;
     width: 100%;
     height: 100px;
-    background: linear-gradient(to top, #03142a, transparent);
+    background: linear-gradient(to top, #6acbff, transparent);
     z-index: 10;
 }
 
@@ -100,8 +100,7 @@ section::after {
     left: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(ellipse at 50% 20%, rgba(11, 25, 55, 0.55), transparent 42%), rgba(2, 6, 16, 0.6);
-    mix-blend-mode: multiply;
+    background: radial-gradient(ellipse at 50% 20%, rgba(255, 255, 255, 0.4), transparent 45%);
     pointer-events: none;
     z-index: 5;
 }
@@ -118,21 +117,21 @@ section img {
 }
 
 section img#sky {
-    filter: hue-rotate(-10deg) saturate(1.15) brightness(0.36);
+    filter: brightness(1.1) saturate(1.08);
 }
 
 section img#mountains,
 section img#forest,
 section img#rocks {
-    filter: hue-rotate(-8deg) saturate(1.2) brightness(0.62);
+    filter: saturate(1.05) brightness(1);
 }
 
 section img#water {
-    filter: hue-rotate(-15deg) saturate(1.65) brightness(0.52);
+    filter: saturate(1.25) brightness(1.08);
 }
 
 section img#cloud {
-    filter: brightness(0.75) saturate(1.1);
+    filter: brightness(1.1) saturate(1.05);
 }
 
 section img#sun {
@@ -147,8 +146,8 @@ section img#sun {
     left: auto;
     object-fit: contain;
     mix-blend-mode: screen;
-    filter: brightness(0.85) contrast(1.05) drop-shadow(0 0 24px rgba(245, 227, 160, 0.6));
-    opacity: 0.9;
+    filter: brightness(1.05) contrast(1.08) drop-shadow(0 0 24px rgba(245, 227, 160, 0.75));
+    opacity: 1;
 }
 
 /* Properites for th text on top section  */
@@ -176,8 +175,8 @@ section #text {
     text-decoration: none;
     /* To prevent Underline */
     padding: 8px 25px;
-    background: #0c2c4b;
-    color: #f4fbff;
+    background: #0d69c3;
+    color: #f8fbff;
     font-size: 1.3em;
     font-weight: bold;
     letter-spacing: 2px;
@@ -187,7 +186,7 @@ section #text {
 }
 
 #explore:hover {
-    background: #133a5f;
+    background: #0a4c8a;
     color: #ffffff;
 }
 
@@ -213,9 +212,9 @@ section #text {
 
 /* Glass Effect */
 .glass {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
-    border-Left: 1px solid rgba(255, 255, 255, 0.5);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+    border-top: 1px solid rgba(255, 255, 255, 0.65);
+    border-Left: 1px solid rgba(255, 255, 255, 0.65);
     border-radius: 15px;
     box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(4px);
@@ -227,7 +226,7 @@ section #text {
 .sec {
     position: relative;
     padding: 10%;
-    background: radial-gradient(circle at 30% 20%, rgba(24, 60, 132, 0.25), transparent 30%), #021225;
+    background: radial-gradient(circle at 30% 20%, rgba(95, 187, 255, 0.35), transparent 32%), #c8ecff;
     padding-bottom: 15%;
     z-index: 50;
     overflow: hidden;
@@ -236,6 +235,7 @@ section #text {
 /* Properties for text content */
 .sec h2 {
     font-size: 3.5em;
+    color: #0c2142;
 }
 
 .sec #name {
@@ -249,12 +249,14 @@ section #text {
 .sec h3 {
     font-size: 1.8em;
     margin: 2%;
+    color: #123864;
 }
 
 .sec h4 {
     font-size: 1.2em;
     text-decoration: underline;
     font-weight: 600;
+    color: #0c2c4b;
 }
 
 .sec p {
@@ -274,24 +276,28 @@ section #text {
 .fishes {
     position: absolute;
     opacity: 0.8;
-    filter: hue-rotate(-10deg) saturate(1.25) brightness(0.85);
+    filter: saturate(1.1) brightness(1);
 }
 
 /* Properties for each fish and sea bed*/
 #fish1 {
     top: 0%;
+    left: 10%;
 }
 
 #fish2 {
     top: 32%;
+    right: 15%;
 }
 
 #fish3 {
     top: 60%;
+    left: 22%;
 }
 
 #fish4 {
     top: 87%;
+    right: 20%;
 }
 
 #seabed {
@@ -304,7 +310,7 @@ section #text {
 .undersea {
     position: absolute;
     opacity: 1;
-    filter: hue-rotate(-18deg) saturate(1.25) brightness(0.74);
+    filter: saturate(1.05) brightness(1.02);
 }
 
 #sea1 {

@@ -1,11 +1,8 @@
 // Select the class bubble
 time = document.getElementsByClassName('bubbles')[0];
 
-// padding values for desktop
-var fish2move = 100;
-var fish3move = 900;
-var fish4move = 1200;
 var sunBaseOffset = 80;
+var fishMovements = [];
 
 if (screen.width < 400) {
 
@@ -13,12 +10,15 @@ if (screen.width < 400) {
     time.style.setProperty('--transform-duration', '15s')
     time.style.setProperty('--transform-y', '-700vh')
 
-    // padding values for mobile
-    fish2move = 1680;
-    fish3move = 3000;
-    fish4move = 4300;
     sunBaseOffset = 60;
 }
+
+fishMovements = [
+    { element: fish1, baseTop: parseFloat(getComputedStyle(fish1).top), multiplier: 0.12 },
+    { element: fish2, baseTop: parseFloat(getComputedStyle(fish2).top), multiplier: -0.1 },
+    { element: fish3, baseTop: parseFloat(getComputedStyle(fish3).top), multiplier: 0.14 },
+    { element: fish4, baseTop: parseFloat(getComputedStyle(fish4).top), multiplier: -0.09 }
+];
 
 
 
@@ -51,11 +51,10 @@ window.addEventListener('scroll', function () {
         splash.style.top = 20 + value * -0.3 + 'px';
     }
 
-    //Move fishes horizontally
-    fish1.style.right = (value - 100) * 1 + 'px';
-    fish2.style.left = (value - fish2move) * 1 + 'px';
-    fish3.style.right = (value - fish3move) * 1 + 'px';
-    fish4.style.left = (value - fish4move) * 1 + 'px';
+    //Move fishes vertically
+    fishMovements.forEach((fish) => {
+        fish.element.style.top = fish.baseTop + value * fish.multiplier + 'px';
+    });
 })
 
 
